@@ -12,7 +12,7 @@ export default defineConfig({
     host: true,
     port: 8080,
     https: false,
-    open: true,
+    open: false,
     cors: true,
   },
   resolve: {
@@ -41,6 +41,8 @@ export default defineConfig({
     // Auto import component
     Components({
       extensions: ['vue'],
+      include: [/\.vue$/, /\.vue\?vue/],
+      exclude: [/[\\/]node_modules[\\/]/, /[\\/]\.git[\\/]/, /[\\/]\.nuxt[\\/]/],
       dts: 'components.d.ts',
       types: [{
         from: 'vue-router',

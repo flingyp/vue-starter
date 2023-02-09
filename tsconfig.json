@@ -20,7 +20,7 @@
       "unplugin-icons/types/vue",
     ]
   },
-  "include": ["src/**/*", "auto-imports.d.ts"],
+  "include": ["src/**/*", "auto-imports.d.ts", "components.d.ts"],
   "exclude": ["dist", "node_modules"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
