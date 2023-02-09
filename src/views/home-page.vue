@@ -2,10 +2,9 @@
 
 </script>
 
+
 <template>
-  <div>
-    <RouterView />
+  <div class="container mx-auto border p-2 my-4">
+    Hello World
   </div>
 </template>
-
-<style scoped></style>
