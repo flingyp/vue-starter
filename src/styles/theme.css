@@ -1,0 +1,10 @@
+html {
+  transition: background .3s linear;
+  background: #ffffff;
+  color: #000000;
+}
+html.dark {
+  background: #202020;
+  color: #ffffff;
+}
+

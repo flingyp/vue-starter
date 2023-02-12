@@ -30,6 +30,7 @@ export default defineConfig({
         'vue',
         'vue-router',
         'pinia',
+        '@vueuse/core',
       ],
       dts: 'auto-imports.d.ts',
       dirs: [

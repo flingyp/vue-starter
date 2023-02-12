@@ -3,9 +3,8 @@
 </script>
 
 <template>
-  <div>
+  <div class="font-serif text-sm font-medium overflow-hidden w-screen">
     <RouterView />
   </div>
 </template>
 
-<style scoped></style>

@@ -1,14 +1,16 @@
 {
   "name": "vue-starter",
   "private": true,
-  "version": "0.0.0",
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
   },
   "dependencies": {
     "@flypeng/tool": "^5.0.1",
+    "@vueuse/core": "^9.12.0",
     "pinia": "^2.0.30",
     "vue": "^3.2.45",
     "vue-router": "^4.1.6"
@@ -17,8 +19,11 @@
     "@flypeng/eslint-config": "^0.0.7",
     "@iconify-json/ep": "^1.1.8",
     "@iconify-json/ic": "^1.1.12",
+    "@iconify-json/line-md": "^1.1.22",
     "@iconify-json/material-symbols": "^1.1.28",
+    "@iconify-json/mdi": "^1.1.46",
     "@iconify-json/ri": "^1.1.4",
+    "@iconify-json/tabler": "^1.1.59",
     "@types/node": "^18.13.0",
     "@vitejs/plugin-vue": "^4.0.0",
     "autoprefixer": "^10.4.13",
