@@ -61,7 +61,7 @@ export default defineConfig({
       compiler: 'vue3',
       scale: 1.2,
       defaultStyle: '',
-      defaultClass: '',
+      defaultClass: 'unplugin-icon',
       jsx: 'react',
     }),
   ],

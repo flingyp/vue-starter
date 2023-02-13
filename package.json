@@ -6,7 +6,9 @@
     "build": "vue-tsc && vite build",
     "preview": "vite preview",
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
+    "lint:fix": "eslint . --fix",
+    "prepare": "husky install",
+    "commit": "git-cz"
   },
   "dependencies": {
     "@flypeng/tool": "^5.0.1",
@@ -16,6 +18,8 @@
     "vue-router": "^4.1.6"
   },
   "devDependencies": {
+    "@commitlint/cli": "^17.4.2",
+    "@commitlint/config-conventional": "^17.4.2",
     "@flypeng/eslint-config": "^0.0.7",
     "@iconify-json/ep": "^1.1.8",
     "@iconify-json/ic": "^1.1.12",
@@ -27,7 +31,11 @@
     "@types/node": "^18.13.0",
     "@vitejs/plugin-vue": "^4.0.0",
     "autoprefixer": "^10.4.13",
+    "commitizen": "^4.3.0",
+    "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.33.0",
+    "husky": "^8.0.0",
+    "lint-staged": "^13.1.1",
     "postcss": "^8.4.21",
     "tailwindcss": "^3.2.6",
     "typescript": "^4.9.3",
@@ -36,5 +44,15 @@
     "unplugin-vue-components": "^0.23.0",
     "vite": "^4.1.0",
     "vue-tsc": "^1.0.24"
+  },
+  "lint-staged": {
+    "./src/**/*": [
+      "npm run lint:fix"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
   }
 }
