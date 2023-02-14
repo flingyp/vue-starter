@@ -1,6 +1,5 @@
 <script setup lang="ts">
-import { useRequest } from '~/composables';
-import {useFormatDate} from '@flypeng/tool/browser'
+import { useFormatDate } from '@flypeng/tool/browser'
 
 const router = useRouter()
 const isDark = useDark()

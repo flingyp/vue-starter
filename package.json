@@ -47,9 +47,7 @@
     "vue-tsc": "^1.0.24"
   },
   "lint-staged": {
-    "./src/**/*": [
-      "npm run lint:fix"
-    ]
+    "*.(js|ts|vue)": "pnpm run lint:fix"
   },
   "config": {
     "commitizen": {
