@@ -1,5 +1,3 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
-
 import type { CreateAxiosDefaults, Method, ResponseType } from 'axios'
 import axios from 'axios'
 
@@ -30,18 +28,18 @@ interface RequestOptions {
   responseType?: ResponseType
 }
 
-interface ResponseOptions<K = any> {
+interface ResponseOptions<K = unknown> {
   status: number
   statusText: string
   data: K
 }
 
-export const useRequest = async <T = any> (options: RequestOptions) => {
+export const useRequest = async <T = unknown> (options: RequestOptions) => {
   const {
     url, method, params, data, responseType,
   } = options
 
-  const requestResult = await requestInstance.request<any, ResponseOptions<T>>({
+  const requestResult = await requestInstance.request<unknown, ResponseOptions<T>>({
     url,
     method,
     params,

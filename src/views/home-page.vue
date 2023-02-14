@@ -1,13 +1,13 @@
 <script setup lang="ts">
-  const router = useRouter()
-  const isDark = useDark()
-  const toggleDark = useToggle(isDark)
+const router = useRouter()
+const isDark = useDark()
+const toggleDark = useToggle(isDark)
 </script>
-
 
 <template>
   <div
-    class="w-[94%] md:container mx-auto my-4 text-center tracking-widest p-2 text-base rounded-sm select-none border dark:border-stone-700"
+    class="w-[94%] md:container mx-auto my-4 text-center tracking-widest
+    p-2 text-base rounded-sm select-none border dark:border-stone-700"
   >
     <h1 class="text-xl">
       <strong>Home</strong>
@@ -18,8 +18,11 @@
         <strong>Introduce</strong>
       </p>
       <label>
-        Vue Starter is base template of Vue. The main technology stack includes Vite, Vue and TailwindCSS.<br>
-        It can help quickly start the construction of a Vue project and save time in the construction of development projects.
+        Vue Starter is base template of Vue.
+        The main technology stack includes Vite, Vue and TailwindCSS.
+        <br>
+        It can help quickly start the construction of a Vue project
+        and save time in the construction of development projects.
       </label>
     </section>
 
@@ -42,4 +45,3 @@
     </div>
   </div>
 </template>
-

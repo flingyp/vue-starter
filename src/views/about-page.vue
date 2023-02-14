@@ -12,18 +12,19 @@ interface RepoInfo {
 }
 const repoInfo = ref<RepoInfo>({
   description: '',
-  pushed_at: ''
+  pushed_at: '',
 })
 
 onMounted(async () => {
-  const { data } = await useRequest<RepoInfo>({url: '/repos/flingyp/vue-starter', method: 'GET'})
+  const { data } = await useRequest<RepoInfo>({ url: '/repos/flingyp/vue-starter', method: 'GET' })
   repoInfo.value = data
 })
 </script>
 
 <template>
   <div
-    class="w-[94%] md:container mx-auto my-4 text-center tracking-widest p-2 text-base rounded-sm select-none border dark:border-stone-700"
+    class="w-[94%] md:container mx-auto my-4 text-center tracking-widest
+    p-2 text-base rounded-sm select-none border dark:border-stone-700"
   >
     <h1 class="text-xl">
       <strong>About</strong>
@@ -44,7 +45,6 @@ onMounted(async () => {
         </div>
       </div>
     </section>
-
 
     <div class="text-lg mt-4 flex justify-center w-[80%] mx-auto space-x-6 cursor-pointer">
       <icon-line-md:sunny-outline-loop
