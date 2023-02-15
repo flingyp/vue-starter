@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { useFormatDate } from '@flypeng/tool/browser'
+import { getGihtubRepoInfo } from '~/requests'
 
 const router = useRouter()
 const isDark = useDark()
@@ -16,7 +17,7 @@ const repoInfo = ref<RepoInfo>({
 })
 
 onMounted(async () => {
-  const { data } = await useRequest<RepoInfo>({ url: '/repos/flingyp/vue-starter', method: 'GET' })
+  const { data } = await getGihtubRepoInfo()
   repoInfo.value = data
 })
 </script>
