@@ -1,7 +1,6 @@
 <script setup lang="ts">
 const router = useRouter()
-const isDark = useDark()
-const toggleDark = useToggle(isDark)
+const { isDark, toggleDark } = useTheme()
 </script>
 
 <template>

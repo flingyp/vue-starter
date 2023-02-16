@@ -3,8 +3,7 @@ import { useFormatDate } from '@flypeng/tool/browser'
 import { getGihtubRepoInfo } from '~/requests'
 
 const router = useRouter()
-const isDark = useDark()
-const toggleDark = useToggle(isDark)
+const { isDark, toggleDark } = useTheme()
 
 interface RepoInfo {
   description: string;
