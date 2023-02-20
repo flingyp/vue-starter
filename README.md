@@ -33,3 +33,4 @@
 ## VSCode Code Sinppets
 
 - `imp`: Output an import code block.
+- `sfc`: Output an sfc code block.
